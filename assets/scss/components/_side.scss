@@ -1,0 +1,40 @@
+@use "../utils" as *;
+
+.side {
+  @include max-width(rem(270));
+
+  .side-group {
+    margin-bottom: rem(30);
+    .side__title {
+      font-size: rem(20);
+      color: $blue;
+      margin-bottom: rem(15);
+    }
+
+    p {
+      font-size: rem(15);
+    }
+
+    .major {
+      @include max-width(rem(200));
+      font-size: rem(15);
+      font-weight: 600;
+      margin-bottom: rem(5);
+    }
+
+    .university {
+      font-size: rem(14);
+      font-weight: 400;
+    }
+
+    .education-year {
+      font-size: rem(13);
+    }
+
+    .interests {
+      display: flex;
+      width: 70%;
+      justify-content: space-between;
+    }
+  }
+}

@@ -1,0 +1,398 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;700&family=Open+Sans:wght@400;700&display=swap");
+.text-red {
+  color: #ea5353;
+}
+
+.bg-red {
+  background-color: #ea5353;
+}
+
+.text-blue {
+  color: #219ebc;
+}
+
+.bg-blue {
+  background-color: #219ebc;
+}
+
+html {
+  font-style: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+  color: inherit;
+  margin: 0;
+  bottom: 0;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 100vw;
+  min-height: 100vh;
+  height: 100%;
+  font-family: "Open Sans", sans-serif;
+  position: relative;
+  background-color: #b7b7a4;
+}
+
+.information {
+  width: 100%;
+  max-width: 16.875rem;
+  font-family: "Fira Code", monospace;
+}
+@media (max-width: 780px) {
+  .information {
+    width: 100%;
+    max-width: 62.5rem;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+@media (max-width: 480px) {
+  .information {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+  }
+}
+.information__link .telpon {
+  display: block;
+  margin-top: 1.25rem;
+  font-weight: 700;
+}
+.information__link .telpon:hover {
+  text-decoration: underline;
+}
+.information__link .email {
+  font-weight: 700;
+}
+.information__link .email:hover {
+  text-decoration: underline;
+}
+.information .pdf-download {
+  position: absolute;
+  top: 0.625rem;
+  right: 0.625rem;
+  display: block;
+}
+.information .pdf-download .icon-pdf {
+  width: 100%;
+  max-width: 1.25rem;
+}
+.information .pdf-download-mobile {
+  display: none;
+  -ms-flex-item-align: center;
+      align-self: center;
+  margin-top: 1.875rem;
+  border: 1px solid #000;
+  padding: 0.625rem 3.125rem;
+}
+@media (max-width: 480px) {
+  .information .pdf-download-mobile {
+    display: inline;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+.information .pdf-download-mobile:hover {
+  background: #000;
+  color: #fff;
+}
+
+.profile {
+  width: 100%;
+  max-width: 62.5rem;
+}
+.profile__card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 0.9375rem;
+}
+@media (max-width: 780px) {
+  .profile__card {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+.profile__card__pict {
+  width: 100%;
+  max-width: 7.8125rem;
+  border-radius: 50%;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+}
+@media (max-width: 780px) {
+  .profile__card__pict {
+    -ms-flex-item-align: center;
+        align-self: center;
+  }
+}
+@media (max-width: 780px) {
+  .profile__card__text {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+.profile__card__text h1 {
+  font-family: "Fira Code", monospace;
+}
+@media (max-width: 480px) {
+  .profile__card__text h1 {
+    font-size: 1.25rem;
+  }
+}
+.profile__card__text h2 {
+  font-family: "Fira Code", monospace;
+  font-weight: 300;
+  font-size: 1.125rem;
+}
+.profile__card__text .social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 3rem;
+}
+.profile__card__text .social__card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 1.125rem;
+}
+.profile__card__text .social__card:hover {
+  text-decoration: underline;
+}
+.profile__card__text .social__card__icon {
+  width: 100%;
+  max-width: 1.25rem;
+}
+.profile__card__text .social__card__text h1 {
+  font-size: 0.875rem;
+}
+.profile__card__text .social__card__text p {
+  font-size: 0.875rem;
+}
+.profile .description {
+  margin-top: 0.9375rem;
+  font-family: "Fira Code", monospace;
+}
+@media (max-width: 780px) {
+  .profile .description {
+    text-align: center;
+  }
+}
+
+.content {
+  width: 100%;
+  max-width: 62.5rem;
+}
+.content .content-group {
+  margin-bottom: 1.875rem;
+}
+.content .content-group .content__title {
+  color: #219ebc;
+  font-size: 1.25rem;
+  margin-bottom: 0.625rem;
+}
+.content .content-group .experience.first {
+  margin-bottom: 0.9375rem;
+}
+.content .content-group .experience__company-name {
+  font-size: 1.25rem;
+  font-family: "Fira Code", monospace;
+  font-weight: 500;
+  margin-bottom: 0.1875rem;
+}
+.content .content-group .experience__company-name span {
+  font-weight: 400;
+}
+.content .content-group .experience h3 {
+  font-family: "Fira Code", monospace;
+  font-size: 0.8125rem;
+  font-weight: 400;
+  margin-bottom: 0.625rem;
+}
+.content .content-group .experience p {
+  font-size: 0.9375rem;
+}
+.content .content-group .certificate {
+  margin-bottom: 0.9375rem;
+  font-family: "Fira Code", monospace;
+}
+.content .content-group .certificate__title {
+  font-size: 1.0625rem;
+  font-weight: 500;
+}
+.content .content-group .certificate__title span {
+  font-weight: 400;
+}
+.content .content-group .certificate h3 {
+  font-size: 0.8125rem;
+  font-weight: 400;
+}
+.content .content-group .current-project__title {
+  font-family: "Fira Code", monospace;
+  font-size: 1.0625rem;
+  font-weight: 500;
+  margin-bottom: 0.3125rem;
+}
+.content .content-group .current-project p {
+  font-size: 0.9375rem;
+}
+
+.side {
+  width: 100%;
+  max-width: 16.875rem;
+}
+.side .side-group {
+  margin-bottom: 1.875rem;
+}
+.side .side-group .side__title {
+  font-size: 1.25rem;
+  color: #219ebc;
+  margin-bottom: 0.9375rem;
+}
+.side .side-group p {
+  font-size: 0.9375rem;
+}
+.side .side-group .major {
+  width: 100%;
+  max-width: 12.5rem;
+  font-size: 0.9375rem;
+  font-weight: 600;
+  margin-bottom: 0.3125rem;
+}
+.side .side-group .university {
+  font-size: 0.875rem;
+  font-weight: 400;
+}
+.side .side-group .education-year {
+  font-size: 0.8125rem;
+}
+.side .side-group .interests {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 70%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1.875rem;
+}
+@media (max-width: 780px) {
+  header {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1.875rem;
+  margin-top: 2.5rem;
+}
+@media (max-width: 620px) {
+  section {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+@media (max-width: 480px) {
+  section {
+    gap: 0rem;
+  }
+}
+
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 2.5rem;
+  margin: 0 auto;
+  margin-top: 3.75rem;
+  margin-bottom: 3.75rem;
+  background: #fff;
+  width: 100%;
+  max-width: 60.5rem;
+  position: relative;
+}
+/*# sourceMappingURL=style.css.map */

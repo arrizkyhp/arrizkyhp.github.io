@@ -1,0 +1,73 @@
+@use "../utils" as *;
+
+.content {
+  @include max-width(rem(1000));
+
+  .content-group {
+    margin-bottom: rem(30);
+    .content__title {
+      color: $blue;
+      font-size: rem(20);
+      margin-bottom: rem(10);
+    }
+
+    .experience {
+      &.first {
+        margin-bottom: rem(15);
+      }
+
+      &__company-name {
+        font-size: rem(20);
+        font-family: $base-font-fira;
+        font-weight: 500;
+        margin-bottom: rem(3);
+
+        span {
+          font-weight: 400;
+        }
+      }
+
+      h3 {
+        font-family: $base-font-fira;
+        font-size: rem(13);
+        font-weight: 400;
+        margin-bottom: rem(10);
+      }
+
+      p {
+        font-size: rem(15);
+      }
+    }
+
+    .certificate {
+      margin-bottom: rem(15);
+      font-family: $base-font-fira;
+      &__title {
+        font-size: rem(17);
+        font-weight: 500;
+
+        span {
+          font-weight: 400;
+        }
+      }
+
+      h3 {
+        font-size: rem(13);
+        font-weight: 400;
+      }
+    }
+
+    .current-project {
+      &__title {
+        font-family: $base-font-fira;
+        font-size: rem(17);
+        font-weight: 500;
+        margin-bottom: rem(5);
+      }
+
+      p {
+        font-size: rem(15);
+      }
+    }
+  }
+}

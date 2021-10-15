@@ -1,0 +1,12 @@
+@use "../utils" as *;
+
+main {
+  @include flex-centering();
+  padding: rem(40);
+  margin: 0 auto;
+  margin-top: rem(60);
+  margin-bottom: rem(60);
+  background: $white;
+  @include max-width(rem(968));
+  position: relative;
+}

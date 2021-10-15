@@ -1,0 +1,86 @@
+@use "../utils" as *;
+
+.profile {
+  @include max-width(rem(1000));
+
+  &__card {
+    display: flex;
+    align-items: center;
+    gap: rem(15);
+
+    @include breakpoint-max(md) {
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    &__pict {
+      @include max-width(rem(125));
+      border-radius: 50%;
+      align-self: flex-start;
+
+      @include breakpoint-max(md) {
+        align-self: center;
+      }
+    }
+
+    &__text {
+      @include breakpoint-max(md) {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+
+      h1 {
+        font-family: $base-font-fira;
+
+        @include breakpoint-max(xs) {
+          font-size: rem(20);
+        }
+      }
+
+      h2 {
+        font-family: $base-font-fira;
+        font-weight: 300;
+        font-size: rem(18);
+      }
+
+      .social {
+        display: flex;
+        gap: rem(48);
+
+        &__card {
+          display: flex;
+          gap: rem(8);
+          margin-top: rem(18);
+
+          &:hover {
+            text-decoration: underline;
+          }
+
+          &__icon {
+            @include max-width(rem(20));
+          }
+
+          &__text {
+            h1 {
+              font-size: rem(14);
+            }
+            p {
+              font-size: rem(14);
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .description {
+    margin-top: rem(15);
+    font-family: $base-font-fira;
+
+    @include breakpoint-max(md) {
+      text-align: center;
+    }
+  }
+}

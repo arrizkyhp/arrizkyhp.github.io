@@ -1,0 +1,15 @@
+@use "../utils" as *;
+
+section {
+  display: flex;
+  gap: rem(30);
+  margin-top: rem(40);
+
+  @include breakpoint-max(sm) {
+    flex-direction: column;
+  }
+
+  @include breakpoint-max(xs) {
+    gap: rem(0);
+  }
+}
