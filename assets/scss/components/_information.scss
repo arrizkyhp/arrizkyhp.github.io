@@ -37,12 +37,19 @@
   }
 
   .pdf-download {
+    display: inline;
     position: absolute;
     top: rem(10);
     right: rem(10);
     display: block;
+
     .icon-pdf {
       @include max-width(rem(20));
+    }
+
+    @include breakpoint-max(xs) {
+      display: none;
+      flex-direction: column;
     }
   }
 

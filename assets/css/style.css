@@ -105,6 +105,7 @@ body {
   text-decoration: underline;
 }
 .information .pdf-download {
+  display: inline;
   position: absolute;
   top: 0.625rem;
   right: 0.625rem;
@@ -113,6 +114,15 @@ body {
 .information .pdf-download .icon-pdf {
   width: 100%;
   max-width: 1.25rem;
+}
+@media (max-width: 480px) {
+  .information .pdf-download {
+    display: none;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 .information .pdf-download-mobile {
   display: none;
@@ -394,5 +404,11 @@ main {
   width: 100%;
   max-width: 60.5rem;
   position: relative;
+}
+@media (max-width: 480px) {
+  main {
+    margin-top: 0;
+    padding: 1.875rem;
+  }
 }
 /*# sourceMappingURL=style.css.map */

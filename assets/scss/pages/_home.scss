@@ -9,4 +9,9 @@ main {
   background: $white;
   @include max-width(rem(968));
   position: relative;
+
+  @include breakpoint-max(xs) {
+    margin-top: 0;
+    padding: rem(30);
+  }
 }
