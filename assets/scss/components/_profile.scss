@@ -82,5 +82,9 @@
     @include breakpoint-max(md) {
       text-align: center;
     }
+
+    @include breakpoint-max(xs) {
+      margin-top: rem(30);
+    }
   }
 }

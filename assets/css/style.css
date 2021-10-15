@@ -248,6 +248,11 @@ body {
     text-align: center;
   }
 }
+@media (max-width: 480px) {
+  .profile .description {
+    margin-top: 1.875rem;
+  }
+}
 
 .content {
   width: 100%;
